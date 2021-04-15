@@ -9,6 +9,7 @@ import (
 	"github.com/oobohP/goback/models"
 )
 
+// FindBooks fetches all books from the database
 func FindBooks(c *gin.Context) {
 	var books []models.Book
 	models.DB.Find(&books)
